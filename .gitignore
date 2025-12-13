@@ -29,8 +29,8 @@
 /config/credentials/
 
 # Ignore seed.md
-/_NOTES/seed.md
-/_NOTES/non-sharebleNOTE.md
+/_NOTES/NonShareable_SEED.md
+/_NOTES/NonShareableNOTE.md
 
 /config/credentials/production.key
 
