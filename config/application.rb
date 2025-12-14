@@ -28,5 +28,8 @@ module UTechDynamicsApi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # Set table prefix
+    config.active_record.table_name_prefix = 'utd_'
   end
 end
