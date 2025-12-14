@@ -6,8 +6,10 @@ default: &default
 
 development:
   <<: *default
-  database: utd_api_development
-
+  database: utd_api_dev
+  username: <%= Rails.application.credentials.dig(:development, :database_user) %>
+  password: <%= Rails.application.credentials.dig(:development, :database_password) %>
+  
 test:
   <<: *default
   database: utd_api_test
