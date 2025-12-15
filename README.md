@@ -96,6 +96,7 @@ Install this project with:
 ```sh
   bundle install
 ```
+<!-- Create & use Database -->
 
 ```sh
   rails db:create
@@ -105,6 +106,16 @@ Install this project with:
   rails db:migrate
   rails db:seed
 ```
+
+```sh
+  rails db:migrate
+  rails db:seed
+```
+
+<!-- Login to Database -->
+
+psql -U <userName> -d <databseName>
+<!-- Use of Hardcode username & password is not recommended to use in database.yml file . Rather we use secret credentials both in development & production  -->
 
 ### Usage
 
