@@ -1,8 +1,11 @@
 <!-- Login DB -->
 psql -U <userName> -d <databseName>
 
+------------------
+------------------
+
 <!-- Scafolding contact-submission with API flag-->
-# Generate scaffold for contact submissions
+# Generate scaffold with API flag for contact submissions
 rails generate scaffold ContactSubmission \
   name:string \
   email:string \
@@ -14,3 +17,6 @@ rails generate scaffold ContactSubmission \
   status:string \
   ip_address:string \
   --api
+  
+  ----------
+  -----------
