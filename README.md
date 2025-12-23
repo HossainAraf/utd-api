@@ -129,6 +129,9 @@ Not deployed
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Planned features: 
+roles, admin dashboard, reporting
+
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
