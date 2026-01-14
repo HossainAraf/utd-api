@@ -1,12 +1,11 @@
 class ContactSubmission < ApplicationRecord
-    // Validations
-    validates :name, :email, :message,  presence: true
-    validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
+  validates :name, :email, :message, presence: true
+  validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
 
-    enum status: {
-        new: 'new',
-        read: 'read',
-        replied: 'replied',
-        archived: 'archived'
-    }, default: 'new'
+  enum :status, {
+    pending: 0,
+    read: 1,
+    replied: 2,
+    archived: 3
+  }
 end

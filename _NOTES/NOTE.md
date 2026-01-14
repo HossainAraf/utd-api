@@ -1,3 +1,5 @@
+**consistency beats intensity**
+
 <!-- Login DB -->
 psql -U <userName> -d <databseName>
 

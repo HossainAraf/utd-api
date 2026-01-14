@@ -1,5 +1,5 @@
 class ContactSubmissionsController < ApplicationController
-  before_action :set_contact_submission, only: %i[ show update destroy ]
+  before_action :set_contact_submission, only: %i[show update destroy]
 
   # GET /contact_submissions
   def index
@@ -39,13 +39,15 @@ class ContactSubmissionsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_contact_submission
-      @contact_submission = ContactSubmission.find(params.expect(:id))
-    end
 
-    # Only allow a list of trusted parameters through.
-    def contact_submission_params
-      params.expect(contact_submission: [ :name, :email, :company, :phone, :subject, :message, :service_interest, :status, :ip_address ])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_contact_submission
+    @contact_submission = ContactSubmission.find(params.expect(:id))
+  end
+
+  # Only allow a list of trusted parameters through.
+  def contact_submission_params
+    params.expect(contact_submission: %i[name email company phone subject message service_interest
+                                         status ip_address])
+  end
 end

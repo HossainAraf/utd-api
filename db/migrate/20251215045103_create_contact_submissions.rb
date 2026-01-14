@@ -8,7 +8,7 @@ class CreateContactSubmissions < ActiveRecord::Migration[8.1]
       t.string :subject
       t.text :message, null: false
       t.string :service_interest
-      t.string :status, default: "new"
+      t.integer :status, default: 0, null: false
       t.string :ip_address
 
       t.timestamps
