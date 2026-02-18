@@ -6,15 +6,18 @@ default: &default
 
 development:
   <<: *default
-  database: utd_api_dev
+  database: utech_api_dev
   username: <%= Rails.application.credentials.dig(:development, :username) %>
   password: <%= Rails.application.credentials.dig(:development, :password) %>
+  schema_search_path: utech,public
 
 test:
   <<: *default
-  database: utd_api_test
+  database: utech_api_test
+  schema_search_path: utech,public
 
 production:
   primary: &primary_production
     <<: *default
     url: <%= ENV['DATABASE_URL'] %>
+    schema_search_path: utech,public
