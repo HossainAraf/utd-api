@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h1><b> UTD-API </b></h1>
+  <h1><b> utech-API </b></h1>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -9,7 +9,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 UTD ](#-UTD-)
+- [📖 utech ](#-utech-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -30,9 +30,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 UTD <a name="about-project"></a>
+# 📖 utech <a name="about-project"></a>
 
-**UTD** this app built with Rails and React on two different apps. This Rails-API enables users to signin/signup create users, send feedbacks, Communicate to Admin etc.
+**utech** this app built with Rails and React on two different apps. This Rails-API enables users to signin/signup create users, send feedbacks, Communicate to Admin etc.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -58,7 +58,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - Coming soon.
-- [Link](https://github.com/HossainAraf/utd-api)
+- [Link](https://github.com/HossainAraf/utech-api)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -85,8 +85,8 @@ Clone this repository to your desired folder:
 Make sure you setup and run the back-end first.
 
 ```sh
-  git clone git@github.com:HossainAraf/utd-api.git
-  cd utd-api
+  git clone git@github.com:HossainAraf/utech-api.git
+  cd utech-api
 ```
 
 ### Install
@@ -116,7 +116,10 @@ Install this project with:
 
 psql -U <userName> -d <databseName>
 <!-- Use of Hardcode username & password is not recommended to use in database.yml file . Rather we use secret credentials both in development & production  -->
-
+## To set custom schema:
+```
+SET search_path TO utech;
+```
 ### Usage
 
 To run the project, execute the following command:
@@ -165,7 +168,7 @@ Not deployed
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/HossainAraf/utd-api/issues).
+Feel free to check the [issues page](https://github.com/HossainAraf/utech-api/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -189,6 +192,6 @@ I would like to thank the code reviewers and Microverse Team who always suppport
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/HossainAraf/utd-api/blob/dev/LICENSE) licensed.
+This project is [MIT](https://github.com/HossainAraf/utech-api/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

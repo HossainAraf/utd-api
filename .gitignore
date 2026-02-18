@@ -29,11 +29,9 @@
 /config/credentials/
 
 # Ignore seed.md
-/_NOTES/NonShareable_SEED.md
-/_NOTES/NonShareableNOTE.md
+/_NOTES/*
 
 /config/credentials/production.key
-
 /config/credentials/development.key
 
 # Ignore database config.

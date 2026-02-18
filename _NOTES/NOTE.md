@@ -2,7 +2,7 @@
 
 <!-- Login DB -->
 psql -U <userName> -d <databseName>
-
+SET search_path TO utech;
 ------------------
 ------------------
 
